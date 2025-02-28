@@ -6,7 +6,7 @@ conn = sqlite3.connect('NetPy.db')
 # Create a cursor
 cursor = conn.cursor()
 
-# Create a table
+# Execute a query
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS devices (
     ip TEXT PRIMARY KEY,
